@@ -1,0 +1,103 @@
+WILDROOT TRIP STUDIO - GOOGLE ADS DEMAND GEN ASSETS
+====================================================
+
+NOTE BEFORE USE
+All copy in this file is a starting draft. Review every line against current
+Google Ads editorial policy and against the advertiser's own substantiated
+claims before running any of it. Prices, availability and feature claims must
+be verifiable and current at the time the ad serves. Nothing here has been
+legally reviewed.
+
+Character counts in brackets include spaces and punctuation.
+
+
+BUSINESS NAME (25 characters max - 1 asset)
+-------------------------------------------
+Wildroot Trip Studio [20]
+
+
+HEADLINES (40 characters max - 15 assets)
+-----------------------------------------
+Plan Your Trip Day By Day [25]
+Day By Day Travel Planning [26]
+See Travel Time Between Stops [29]
+Build A Realistic Itinerary [27]
+Trip Planning For US Travelers [30]
+Organize A Group Trip Easily [28]
+Fit The Trip To Your Days Off [29]
+Budget Your Trip In Dollars [27]
+A Calmer Way To Plan Travel [27]
+Road Trip Plans That Add Up [27]
+First Time Abroad, Start Here [29]
+Family Trips, Planned Properly [30]
+Sample Itineraries To Copy [26]
+Know The Drive Time First [25]
+Free Day Plan Cards For Trips [29]
+
+
+LONG HEADLINES (90 characters max - 10 assets)
+----------------------------------------------
+Turn a rough travel idea into a day by day plan with real travel times [70]
+Day by day itinerary planning built around the vacation days you actually have [78]
+See the travel time between every stop before you commit to the schedule [72]
+Plan a trip from a US airport with budgets in dollars and distances in miles [76]
+Group and family trips organized in one plan everyone can actually follow [73]
+First trip abroad from the US, with the paperwork explained in plain English [76]
+Road trip plans with realistic drive times between every stop on the route [74]
+A quieter way to plan travel, built for people with limited vacation days [73]
+Sample itineraries you can copy, edit and take with you on paper or a phone [75]
+Budget every day of your trip in dollars before you book a single thing [71]
+
+
+DESCRIPTIONS (90 characters max - 10 assets)
+--------------------------------------------
+Add stops, see the travel time between them, and watch the day add up. [70]
+Free for your first two trips. No credit card and no trial countdown. [69]
+Built for US travelers: dollars, miles, degrees Fahrenheit, PTO days. [69]
+Print your plan or take a PDF that still works with no phone signal. [68]
+Day plan cards show each stop, the travel between them and a daily cost. [72]
+One shared link keeps a group trip out of the group chat and in order. [70]
+See what each day costs in dollars before the trip, not during it. [66]
+New to international travel? The paperwork is explained step by step. [69]
+Road trip legs are shown in miles with a drive time you can rely on. [68]
+Copy a finished sample itinerary, then change whatever you want. [64]
+
+
+CALL TO ACTION (from Google's standard set - 5 suggestions)
+-----------------------------------------------------------
+Learn more [10]
+Get started [11]
+Sign up [7]
+Subscribe [9]
+See more [8]
+
+
+LANDING PAGE PAIRING NOTES (internal, not ad copy)
+--------------------------------------------------
+Planning speed and day-by-day angles     -> trip-planner.html
+Sample itinerary and copy-a-plan angles  -> itineraries.html
+Budget and cost angles                   -> destinations.html
+First-time international angles          -> blog-first-international-trip.html
+Road trip angles                         -> destination-national-parks.html
+Free tier and pricing angles             -> pricing.html
+
+Landing page relevance is a policy requirement. Whatever an asset promises
+must appear prominently on the page the click lands on.
+
+
+COMPLIANCE CHECKLIST APPLIED TO THIS FILE
+-----------------------------------------
+- No all-caps words other than the acronyms US, USD, PDF and PTO.
+- No exclamation points, no repeated punctuation, no emoji, no symbols.
+- No reference to the ad itself and no use of "click here" or "click now".
+- No superlatives and no unverifiable claims. No "best", "number one",
+  "guaranteed" or similar.
+- No fake urgency, fake scarcity, countdowns or invented statistics.
+- No specific prices, fares, discounts or deals. Feature claims only.
+- No airline, hotel, competitor or trademarked brand names.
+- No phone numbers in any headline.
+- Every line is written to stand alone, because Google mixes assets.
+- Angles varied across the set: planning speed, day-by-day organization,
+  budgeting, group and family trips, first-time travelers, road trips,
+  and international travel departing from the US.
+- Tone matches the site: calm, plain, unhurried, specific.

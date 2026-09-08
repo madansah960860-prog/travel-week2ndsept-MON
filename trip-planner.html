@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Planner | Build a Day-by-Day Itinerary in Your Browser</title>
+<meta name="description" content="Build a day-by-day travel itinerary free in your browser. Add time-stamped stops, see travel time between them, and watch the cost per traveler add up in USD.">
+<link rel="canonical" href="https://www.wildroottripstudio.com/trip-planner.html">
+<meta name="theme-color" content="#EDE4D6">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wildroot Trip Studio">
+<meta property="og:title" content="Trip Planner | Build a Day-by-Day Itinerary in Your Browser">
+<meta property="og:description" content="Add time-stamped stops, see travel time between them, and watch the cost per traveler add up in USD.">
+<meta property="og:url" content="https://www.wildroottripstudio.com/trip-planner.html">
+<meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=70">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Wildroot Trip Planner",
+  "url": "https://www.wildroottripstudio.com/trip-planner.html",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Any modern web browser",
+  "description": "A browser-based day-by-day travel itinerary builder with travel times and USD cost estimates.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free tier includes up to two saved trips."
+  },
+  "publisher": { "@type": "Organization", "name": "Wildroot Trip Studio" }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap wrap-wide header-inner">
+    <a class="wordmark" href="index.html">Wildroot<span class="wordmark-sub">Trip Studio</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-text">Menu</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-parent">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="submenu-plan">Plan <span class="nav-caret" aria-hidden="true">&#9660;</span></button>
+          <ul class="nav-submenu" id="submenu-plan">
+            <li><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+            <li><a class="nav-link" href="trip-planner.html" aria-current="page">Trip Planner</a></li>
+            <li><a class="nav-link" href="tools.html">Checklists &amp; Free Tools</a></li>
+          </ul>
+        </li>
+        <li class="nav-parent">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="submenu-dest">Destinations <span class="nav-caret" aria-hidden="true">&#9660;</span></button>
+          <ul class="nav-submenu" id="submenu-dest">
+            <li><a class="nav-link" href="destinations.html">All Destinations</a></li>
+            <li><a class="nav-link" href="destination-iceland.html">Iceland</a></li>
+            <li><a class="nav-link" href="destination-kyoto.html">Kyoto, Japan</a></li>
+            <li><a class="nav-link" href="destination-national-parks.html">National Parks Road Trip</a></li>
+          </ul>
+        </li>
+        <li class="nav-parent">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="submenu-itin">Itineraries <span class="nav-caret" aria-hidden="true">&#9660;</span></button>
+          <ul class="nav-submenu" id="submenu-itin">
+            <li><a class="nav-link" href="itineraries.html">All Sample Itineraries</a></li>
+            <li><a class="nav-link" href="itinerary-iceland-ring-road.html">Iceland South Coast, 3 Days</a></li>
+            <li><a class="nav-link" href="itinerary-kyoto-slow.html">Kyoto Slow Travel, 3 Days</a></li>
+            <li><a class="nav-link" href="itinerary-utah-parks.html">Utah Parks Loop, 3 Days</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="blog.html">Guides</a></li>
+        <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-parent">
+          <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="submenu-co">Company <span class="nav-caret" aria-hidden="true">&#9660;</span></button>
+          <ul class="nav-submenu" id="submenu-co">
+            <li><a class="nav-link" href="about.html">About Us</a></li>
+            <li><a class="nav-link" href="for-travel-agents.html">For Travel Agents</a></li>
+            <li><a class="nav-link" href="testimonials.html">Reviews</a></li>
+            <li><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-cta-slot"><a class="btn btn-primary btn-sm" href="pricing.html">See Pro</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero page-head">
+    <span class="leaf" style="left:5%;top:44%" aria-hidden="true"></span>
+    <span class="leaf leaf-2" style="right:7%;top:22%" aria-hidden="true"></span>
+    <div class="wrap wrap-wide">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li>Trip Planner</li></ol>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-display">Build your itinerary, day by day</h1>
+          <p class="hero-lede">Pick a destination, drop stops into days, and watch the travel time and cost per traveler add up. Nothing is saved until you choose to save it.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#planner">Jump to the planner</a>
+            <a class="btn btn-ghost" href="how-it-works.html">How the planner works</a>
+          </div>
+        </div>
+        <div class="hero-media media-zoom">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=70"
+               alt="A still alpine lake surrounded by dark forested peaks"
+               width="900" height="1200" fetchpriority="high" decoding="async" data-fallback="alpine-lake-peaks">
+          <p class="hero-badge">Free tier: two saved trips, unlimited editing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ THE PLANNER ============================ -->
+  <section class="section bg-shell section-overlap" id="planner">
+    <div class="wrap wrap-wide">
+      <h2 class="measure">Your plan</h2>
+      <p class="measure mb-6">Choose a destination to load its researched stop library, pick the day you are filling, then add stops. Everything recalculates as you go.</p>
+
+      <div class="planner" data-planner>
+
+        <!-- SIDE: controls + stop library -->
+        <div class="planner-side">
+          <div class="card" style="margin-bottom:1.5rem">
+            <h3>Trip settings</h3>
+
+            <div class="field">
+              <label for="planner-destination">Destination</label>
+              <select id="planner-destination">
+                <option value="iceland">Iceland, south coast</option>
+                <option value="kyoto">Kyoto, Japan</option>
+                <option value="utah">Utah national parks</option>
+                <option value="lisbon">Lisbon, Portugal</option>
+                <option value="generic">Somewhere else (generic stops)</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="planner-party">Number of travelers</label>
+              <input type="number" id="planner-party" value="2" min="1" max="12" step="1" inputmode="numeric">
+              <span class="hint">Costs below are multiplied by this number.</span>
+            </div>
+
+            <div class="field">
+              <label for="planner-target-day">Add stops to</label>
+              <select id="planner-target-day">
+                <option value="0">Day 1</option>
+                <option value="1">Day 2</option>
+                <option value="2">Day 3</option>
+              </select>
+              <span class="hint">Change this before adding a stop from the library.</span>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-primary btn-sm" type="button" data-planner-add-day>Add a day</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-planner-reset>Clear plan</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Stop library</h3>
+            <p style="font-size:0.9375rem">Researched stops with a suggested start time, a realistic duration and an estimated cost per person.</p>
+            <!-- PLACEHOLDER — REPLACE WITH REAL VERIFIED INFORMATION BEFORE LAUNCH -->
+            <div class="planner-library" data-planner-library aria-label="Available stops"></div>
+          </div>
+        </div>
+
+        <!-- MAIN: the day board + summary -->
+        <div>
+          <div class="planner-board" data-planner-board></div>
+
+          <div class="card" style="margin-top:1.5rem">
+            <h3>Trip summary</h3>
+            <div data-planner-summary class="planner-summary"></div>
+            <div class="btn-row" style="margin-top:1.25rem">
+              <button class="btn btn-primary btn-sm" type="button" data-planner-print>Print this plan</button>
+              <a class="btn btn-ghost btn-sm" href="pricing.html">Unlock PDF export</a>
+            </div>
+            <p class="form-note" style="margin-top:1.25rem">Costs are estimates for activities and meals you have added. They do not include flights, lodging, travel insurance or tips. Your plan stays in this browser and is only stored locally after you have made a cookie choice. It is never uploaded without an account.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TIPS -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="measure">Four habits that make a plan survive contact with the trip</h2>
+      <p class="measure mb-6">Drawn from the itineraries people actually finish, compared against the ones they abandon on day two.</p>
+
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <h3>Leave one slot empty every day</h3>
+          <p>A fully booked day has no room for the restaurant you walk past and want to try, or the two hours you lose to rain. The empty slot is not wasted; it is the part of the trip you will remember.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <h3>Put the hardest thing first</h3>
+          <p>Sunrise hikes, timed-entry tickets and long drives belong at the start of a day. Anything scheduled after 4 PM has a much higher chance of being skipped.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <h3>Check the arrival day honestly</h3>
+          <p>If you land at 3 PM after a red-eye from a US East Coast airport, that day holds one stop, not four. Wildroot lightens arrival days by default and you can override it.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <h3>Book the awkward night first</h3>
+          <p>On most routes there is one night in a small town with three lodging options. Book that one before anything else, then build the days around it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- START FROM A TEMPLATE -->
+  <section class="section bg-shell">
+    <div class="wrap">
+      <h2>Or start from a finished plan</h2>
+      <p class="measure mb-6">Every sample itinerary can be opened, copied and edited. They are complete plans, not outlines.</p>
+      <div class="grid grid-3">
+        <a class="tile card card-flat" href="itinerary-iceland-ring-road.html">
+          <div class="card-media"><div class="tile-media ratio-4x3">
+            <img src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=700&q=70"
+                 alt="An empty two-lane road crossing an open volcanic plain" width="700" height="525" loading="lazy" decoding="async" data-fallback="iceland-empty-road-plain">
+          </div></div>
+          <h3>Iceland South Coast, 3 days</h3>
+          <p>Golden Circle, waterfalls, black sand and the glacier lagoon, from Reykjavik.</p>
+          <div class="tile-meta"><span>Driving</span><span>2 travelers</span></div>
+        </a>
+        <a class="tile card card-flat" href="itinerary-kyoto-slow.html">
+          <div class="card-media"><div class="tile-media ratio-4x3">
+            <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=700&q=70"
+                 alt="A tall stand of green bamboo along a narrow walking path" width="700" height="525" loading="lazy" decoding="async" data-fallback="kyoto-bamboo-path">
+          </div></div>
+          <h3>Kyoto Slow Travel, 3 days</h3>
+          <p>Two neighborhoods a day, early temple starts and no rental car.</p>
+          <div class="tile-meta"><span>Walking and rail</span><span>2 travelers</span></div>
+        </a>
+        <a class="tile card card-flat" href="itinerary-utah-parks.html">
+          <div class="card-media"><div class="tile-media ratio-4x3">
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=700&q=70"
+                 alt="Red rock canyon walls glowing under late afternoon light" width="700" height="525" loading="lazy" decoding="async" data-fallback="utah-red-rock-canyon">
+          </div></div>
+          <h3>Utah Parks Loop, 3 days</h3>
+          <p>Arches, Canyonlands and Dead Horse Point with realistic drive times.</p>
+          <div class="tile-meta"><span>Driving</span><span>4 travelers</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap wrap-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html">Wildroot<span class="wordmark-sub">Trip Studio</span></a>
+        <p>An independent trip-planning studio for people who would rather spend their vacation days well than spend them researching.</p>
+        <!-- PLACEHOLDER — REPLACE WITH REAL VERIFIED INFORMATION BEFORE LAUNCH -->
+        <address>
+          Wildroot Trip Studio LLC<br>
+          1420 Pearl Street, Suite 210<br>
+          Boulder, CO 80302, United States<br>
+          <a href="tel:+17205550148">+1 (720) 555-0148</a><br>
+          <a href="mailto:hello@wildroottripstudio.com">hello@wildroottripstudio.com</a>
+        </address>
+      </div>
+      <div>
+        <h2>Plan</h2>
+        <ul class="footer-links">
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="trip-planner.html">Trip Planner</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="itineraries.html">Sample Itineraries</a></li>
+          <li><a href="tools.html">Checklists &amp; Free Tools</a></li>
+          <li><a href="blog.html">Travel Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Company</h2>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+          <li><a href="for-travel-agents.html">For Travel Agents</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h2>Trip notes by email</h2>
+        <form class="form" data-validate data-success-message="Thanks. Check your inbox for a confirmation email; you are not subscribed until you confirm." novalidate>
+          <div class="field" data-label="Email address">
+            <label for="footer-email">Email address</label>
+            <input type="email" id="footer-email" name="email" required autocomplete="email" placeholder="you@example.com">
+            <p class="field-error" role="alert" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary btn-block btn-sm" type="submit">Subscribe</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Sent by Wildroot Trip Studio LLC, 1420 Pearl Street, Suite 210, Boulder, CO 80302. About two emails a month. Every email includes a one-click unsubscribe link, and unsubscribing takes effect immediately. We never sell or rent your address. <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="margin:0">&copy; <span data-year>2026</span> Wildroot Trip Studio LLC. All rights reserved. Wildroot Trip Studio is a trip-planning tool, not a travel agency or tour operator.</p>
+      <ul class="footer-legal-row">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        <li><a href="accessibility-statement.html">Accessibility</a></li>
+        <li><a href="refund-policy.html">Refunds &amp; Cancellations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="dns-link" href="privacy-policy.html#do-not-sell">Do Not Sell or Share My Personal Information</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<section class="cookie-banner" aria-label="Cookie consent">
+  <div class="wrap wrap-wide">
+    <div class="cookie-inner">
+      <div>
+        <h2>We ask before we set any cookie</h2>
+        <p>Only cookies that keep the site working are set automatically. Analytics and advertising cookies, including Google advertising cookies, are set only if you accept them. You can change your mind at any time. Read our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button class="btn btn-primary btn-sm" type="button" data-consent="accept">Accept all</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-consent="reject">Reject non-essential</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-consent="manage" aria-expanded="false" aria-controls="cookie-prefs">Manage preferences</button>
+      </div>
+    </div>
+    <div class="cookie-prefs" id="cookie-prefs">
+      <div class="checkline">
+        <input type="checkbox" id="cookie-essential" checked disabled>
+        <label for="cookie-essential"><strong>Strictly necessary</strong> &ndash; page security, your cookie choice and form protection. Always on, cannot be switched off.</label>
+      </div>
+      <div class="checkline">
+        <input type="checkbox" id="cookie-analytics">
+        <label for="cookie-analytics"><strong>Analytics</strong> &ndash; anonymous page-view counts so we know which guides to keep updating.</label>
+      </div>
+      <div class="checkline">
+        <input type="checkbox" id="cookie-advertising">
+        <label for="cookie-advertising"><strong>Advertising</strong> &ndash; third-party advertising cookies, including Google, used to show and measure ads.</label>
+      </div>
+      <button class="btn btn-primary btn-sm" type="button" data-consent="save">Save my preferences</button>
+    </div>
+  </div>
+</section>
+
+<button class="to-top" type="button" aria-label="Back to top">&#8593;</button>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+WILDROOT TRIP STUDIO - GOOGLE ADS RESPONSIVE DISPLAY ASSETS
+============================================================
+
+NOTE BEFORE USE
+All copy in this file is a starting draft. Review every line against current
+Google Ads editorial policy and against the advertiser's own substantiated
+claims before running any of it. Prices, availability and feature claims must
+be verifiable and current at the time the ad serves. Nothing here has been
+legally reviewed.
+
+Character counts in brackets include spaces and punctuation.
+
+
+BUSINESS NAME (25 characters max - 1 asset)
+-------------------------------------------
+Wildroot Trip Studio [20]
+
+
+SHORT HEADLINES (30 characters max - 15 assets)
+-----------------------------------------------
+Plan Your Trip Day By Day [25]
+Day By Day Trip Planning [24]
+See The Travel Time [19]
+Build A Real Itinerary [22]
+Trip Plans For US Travelers [27]
+Organize A Group Trip [21]
+Fit The Trip To Your Days [25]
+Budget Your Trip In USD [23]
+A Calmer Way To Plan [20]
+Road Trip Plans That Fit [24]
+First Trip Abroad? [18]
+Family Trips, Organized [23]
+Sample Itineraries [18]
+Know The Drive Time [19]
+Free Day Plan Cards [19]
+
+
+LONG HEADLINE (90 characters max - 5 assets)
+--------------------------------------------
+Turn a rough travel idea into a day by day plan with real travel times [70]
+Day by day itinerary planning built around the vacation days you actually have [78]
+Plan a trip from a US airport with budgets in dollars and distances in miles [76]
+Road trip plans with realistic drive times between every stop on the route [74]
+Sample itineraries you can copy, edit and take with you on paper or a phone [75]
+
+
+DESCRIPTIONS (90 characters max - 10 assets)
+--------------------------------------------
+Add stops, see the travel time between them, and watch the day add up. [70]
+Free for your first two trips. No credit card and no trial countdown. [69]
+Built for US travelers: dollars, miles, degrees Fahrenheit, PTO days. [69]
+Print your plan or take a PDF that still works with no phone signal. [68]
+Day plan cards show each stop, the travel between them and a daily cost. [72]
+One shared link keeps a group trip out of the group chat and in order. [70]
+See what each day costs in dollars before the trip, not during it. [66]
+New to international travel? The paperwork is explained step by step. [69]
+Road trip legs are shown in miles with a drive time you can rely on. [68]
+Copy a finished sample itinerary, then change whatever you want. [64]
+
+
+CALL TO ACTION (5 suggestions)
+------------------------------
+Learn more [10]
+Get started [11]
+Sign up [7]
+Subscribe [9]
+See more [8]
+
+
+IMAGE AND LOGO NOTES (internal, not ad copy)
+--------------------------------------------
+Responsive display also needs images and a logo. Use warm natural photography
+consistent with the site: forest, coast, mountain and open-road subjects in
+soft daylight. Avoid cold blue grading, neon and heavy vignettes.
+
+Required ratios:
+  Landscape 1.91:1   - 1200 x 628 px minimum
+  Square 1:1         - 1200 x 1200 px minimum
+  Portrait 4:5       - 960 x 1200 px minimum, optional but recommended
+  Logo square 1:1    - 1200 x 1200 px, transparent background
+  Logo landscape 4:1 - 1200 x 300 px, transparent background
+
+Do not place text over the supplied images. Google overlays the headline and
+description itself, and burned-in text can cause a disapproval or crop badly.
+
+
+LANDING PAGE PAIRING NOTES (internal, not ad copy)
+--------------------------------------------------
+Planning speed and day-by-day angles     -> trip-planner.html
+Sample itinerary and copy-a-plan angles  -> itineraries.html
+Budget and cost angles                   -> destinations.html
+First-time international angles          -> blog-first-international-trip.html
+Road trip angles                         -> destination-national-parks.html
+Free tier and pricing angles             -> pricing.html
+
+Landing page relevance is a policy requirement. Whatever an asset promises
+must appear prominently on the page the click lands on.
+
+
+COMPLIANCE CHECKLIST APPLIED TO THIS FILE
+-----------------------------------------
+- No all-caps words other than the acronyms US, USD, PDF and PTO.
+- No exclamation points, no repeated punctuation, no emoji, no symbols.
+- No reference to the ad itself and no use of "click here" or "click now".
+- No superlatives and no unverifiable claims. No "best", "number one",
+  "guaranteed" or similar.
+- No fake urgency, fake scarcity, countdowns or invented statistics.
+- No specific prices, fares, discounts or deals. Feature claims only.
+- No airline, hotel, competitor or trademarked brand names.
+- No phone numbers in any headline.
+- Every line is written to stand alone, because Google mixes assets.
+- Angles varied across the set: planning speed, day-by-day organization,
+  budgeting, group and family trips, first-time travelers, road trips,
+  and international travel departing from the US.
+- Tone matches the site: calm, plain, unhurried, specific.
